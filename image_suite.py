@@ -115,7 +115,7 @@ class ImageSuite:
         tk.Label(header, text="Smart Image Enhancement Studio",
                  bg=BG_PANEL, fg=TEXT_PRI,
                  font=("Segoe UI", 15, "bold")).pack(side="left", pady=8)
-        tk.Label(header, text="— Spatial Domain Processing",
+        tk.Label(header, text="- Spatial Domain Processing",
                  bg=BG_PANEL, fg=TEXT_SEC,
                  font=("Segoe UI", 10)).pack(side="left", padx=6, pady=8)
 
@@ -124,7 +124,7 @@ class ImageSuite:
                        ACCENT, side="right", padx=(0,20))
 
         # ── Status bar ──────────────────────────────
-        self.status_var = tk.StringVar(value="No image loaded — click Load Image to begin.")
+        self.status_var = tk.StringVar(value="No image loaded - click Load Image to begin.")
         statusbar = tk.Frame(self.root, bg=BG_PANEL, height=26)
         statusbar.pack(fill="x", side="bottom")
         statusbar.pack_propagate(False)
@@ -142,7 +142,7 @@ class ImageSuite:
         sidebar.pack_propagate(False)
         self._build_sidebar(sidebar)
 
-        # Center — image canvas
+        # Center - image canvas
         center = tk.Frame(body, bg=BG_DARK)
         center.pack(fill="both", expand=True, side="left")
         self._build_canvas_area(center)
@@ -410,7 +410,7 @@ class ImageSuite:
         self.cont_slider.set(100)
         self.bright_val.config(text="0")
         self.cont_val.config(text="100")
-        self.status_var.set("Reset — showing original image.")
+        self.status_var.set("Reset - showing original image.")
 
     # ──────────────────────────────────────────
     #  HISTOGRAM DISPLAY
