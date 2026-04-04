@@ -4,6 +4,9 @@ Smart Image Enhancement Studio
 Spatial domain image processing tool for IPV/DIP coursework.
 Features: Brightness, Contrast, Histogram EQ, Blur, Sharpen, Before/After view.
 """
+# ─────────────────────────────────────────────
+#   The Comments are just I dont Mess Up. I Promise to Refactor it in Proper Files.
+# ─────────────────────────────────────────────
 
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
