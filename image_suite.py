@@ -539,7 +539,7 @@ class ImageSuite:
         fig.patch.set_facecolor(Theme.BG_CARD.value)
         ax.set_facecolor("#131722")
 
-        colors = ("#f87171", "#4ade80", "#60a5fa")  # R, G, B in display
+        colors = ("#f87171", "#4ade80", "#60a5fa")
         labels = ("R", "G", "B")
         for i, (col, lbl) in enumerate(zip(colors, labels)):
             hist = cv2.calcHist([bgr_img], [i], None, [256], [0, 256])
